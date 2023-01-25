@@ -119,6 +119,15 @@ button:hover {
   color: black;
 }
 
+.card:hover {
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  transform: scale(1.1);
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
 span {
   color: blue;
 }

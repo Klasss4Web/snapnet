@@ -43,7 +43,7 @@ const EventListPage = () => {
             key={datum?.id}
             to={`/event/${datum.id}`}
           >
-            <div key={datum.id}>
+            <div key={datum.id} className="card">
               <h2>{datum?.title}</h2>
               <p>{datum?.description}</p>
               <h3>{datum?.date}</h3>
