@@ -20,12 +20,22 @@ const EventListPage = () => {
     setSearchedData(results ?? []);
   };
 
-  // console.log("data", SearchedData);
+   const handleFilterByPetsAllowed = (): void => {
+     const results = data?.filter((dat) => {
+      //  if (e.target.value === "") return data;
+       return dat?.petsAllowed;
+     });
+
+     setSearchedData(results ?? []);
+   };
+
+  console.log("data", SearchedData);
   const mapData = SearchedData.length > 0 ? SearchedData : data;
   return (
     <div className="App container mx-auto  p-4">
       <h1>List of events in our archive</h1>
       <input placeholder="Search event by title" onChange={handleFilter} />
+      <button className="mx-2" onClick={handleFilterByPetsAllowed}>Pets Allowed?</button>
       {mapData?.map((datum) => {
         return (
           <Link
