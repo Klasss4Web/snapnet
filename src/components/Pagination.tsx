@@ -5,7 +5,6 @@ export interface paginationData {
   paginate: (number: number) => void;
 }
 
-
 export const Pagination = ({
   dataPerPage,
   totalData,
@@ -31,8 +30,11 @@ export const Pagination = ({
               textAlign: "center",
               borderRadius: "5px",
               cursor: "pointer",
-              background: currentPage === number ? "#2A9D8F" : "#fff",
-              color: currentPage === number ? "#fff" : "#2A9D8F",
+              background:
+                currentPage === number
+                  ? "linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%)"
+                  : "#fff",
+              color: currentPage === number ? "#fff" : "blue",
             }}
             onClick={() => paginate(number)}
           >
