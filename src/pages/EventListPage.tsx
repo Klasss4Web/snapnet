@@ -33,7 +33,7 @@ const EventListPage = () => {
      setSearchedData(results ?? []);
    };
 
-  console.log("data", SearchedData);
+  // console.log("data", SearchedData);
   const mapData = SearchedData.length > 0 ? SearchedData : data;
   return (
     <div className="App container mx-auto  p-4">
