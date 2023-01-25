@@ -5,10 +5,6 @@
   line-height: 1.5;
 }
 
-/* .container {
-  
-} */
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -168,16 +164,6 @@ img {
   height: 500px;
 }
 
-form {
-  width: 330px;
-  border: 2px solid grey;
-  padding: 40px 40px 20px 60px;
-}
-
-label {
-  font-size: 18px;
-}
-
 input {
   width: 400px;
   height: 40px;
@@ -200,12 +186,10 @@ textarea {
   color: white;
 }
 
-.upvotes {
-  font-style: italic;
-  color: green;
-}
 
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 690px) {
 
   .App {
     max-width: 70%
@@ -233,3 +217,37 @@ textarea {
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 400px) {
+
+  .App {
+    max-width: 90%
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 90%;
+    /* margin-bottom: 40px; */
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+     font-weight: 500;
+  }
+  
+  h3, p {
+    font-size: 16px;
+  }
+}
+
+
+
+
