@@ -25,7 +25,7 @@ const EventListPage = () => {
   return (
     <div className="App container mx-auto  p-4">
       <h1>List of events in our archive</h1>
-      <input placeholder="Search event" onChange={handleFilter} />
+      <input placeholder="Search event by title" onChange={handleFilter} />
       {mapData?.map((datum) => {
         return (
           <Link
