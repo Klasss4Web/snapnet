@@ -13,8 +13,10 @@ const EventList = ({ otherEvent }: any) => (
         key={eve?.id}
         to={`/event/${eve.id}`}
       >
-        <h3>{eve.title}</h3>
-        <hr />
+        <div className="card-small">
+          <h3>{eve.title}</h3>
+          <hr />
+        </div>
       </Link>
     ))}
   </>

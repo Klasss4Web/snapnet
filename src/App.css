@@ -128,6 +128,14 @@ button:hover {
   color: #fff;
 }
 
+.card-small:hover {
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  z-index: 1000;
+  padding: 5px;
+  border-radius: 20px;
+  color: #fff;
+}
+
 span {
   color: blue;
 }
