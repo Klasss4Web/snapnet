@@ -9,8 +9,11 @@ export const LandingPage = () => {
         </div>
         <div className="flex-1 flex items-center justify-end h-100 w-100">
           <div className="text-end texts h-80">
-            <h1 className="text-xl large" style={{ width: "400px", fontWeight: "bold" }}>
-              Imagine if Snapchat had events.
+            <h1
+              className="text-xl large"
+              style={{ width: "400px", fontWeight: "bold" }}
+            >
+              Imagine if <span className="snap">Snapchat</span> had events.
             </h1>
             <p className="my-5" style={{ width: "400px" }}>
               Easily host and share events with your friends across any social

@@ -22,6 +22,11 @@ p {
   color: #4F4F4F;
 }
 
+.snap {
+  color:  #e87bf8
+
+}
+
 button {
   background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
   padding: 15px 30px;
