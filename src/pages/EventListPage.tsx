@@ -11,7 +11,7 @@ const EventListPage = () => {
 
   const [SearchedData, setSearchedData] = useState<Events[]>([]);
 
-  const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFilter = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const results = data?.filter((dat) => {
       if (e.target.value === "") return data;
       return dat?.title.toLowerCase().includes(e.target.value.toLowerCase());
@@ -20,7 +20,7 @@ const EventListPage = () => {
     setSearchedData(results ?? []);
   };
 
-  console.log("data", SearchedData);
+  // console.log("data", SearchedData);
   const mapData = SearchedData.length > 0 ? SearchedData : data;
   return (
     <div className="App container mx-auto  p-4">
