@@ -220,11 +220,13 @@ textarea {
   }
   h1 {
     font-size: 30px;
+    font-weight: 600;
     margin-top: 30px;
   }
 
   h2 {
     font-size: 22px;
+     font-weight: 500;
   }
   
   h3, p {
