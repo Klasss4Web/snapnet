@@ -14,7 +14,11 @@ const EventListPage = () => {
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const results = data?.filter((dat) => {
       if (e.target.value === "") return data;
-      return dat?.title.toLowerCase().includes(e.target.value.toLowerCase());
+      return (
+        dat?.title.toLowerCase().includes(e.target.value.toLowerCase()) ||
+        dat?.organizer.toLowerCase().includes(e.target.value.toLowerCase()) ||
+        dat?.location.toLowerCase().includes(e.target.value.toLowerCase())
+      );
     });
 
     setSearchedData(results ?? []);
@@ -34,7 +38,7 @@ const EventListPage = () => {
   return (
     <div className="App container mx-auto  p-4">
       <h1>List of events in our archive</h1>
-      <input placeholder="Search event by title" onChange={handleFilter} />
+      <input placeholder="Search event by title, organizer or location" onChange={handleFilter} />
       <button className="mx-2" onClick={handleFilterByPetsAllowed}>Pets Allowed?</button>
       {mapData?.map((datum) => {
         return (
@@ -49,6 +53,7 @@ const EventListPage = () => {
               <h3>{datum?.date}</h3>
               <h3>{datum?.time}</h3>
               <h3>{datum?.location}</h3>
+              <h3>Organizer: {datum?.organizer}</h3>
             </div>
           </Link>
         );
