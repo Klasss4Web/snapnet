@@ -16,6 +16,8 @@
 
 h1 {
   font-size: 48px;
+  line-height: 0.9;
+  margin-bottom: 20px;
 }
 
 p {
