@@ -224,6 +224,10 @@ textarea {
     max-width: 90%
   }
 
+  .nav-div {
+  width: 100%;
+}
+
   input {
     width: 100%;
   }
