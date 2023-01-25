@@ -46,7 +46,8 @@ input {
   border: 1px solid #f4f4f4;
   width: 700px;
   border-radius: 10px;
-  padding: 5px;
+  padding: 25px;
+  outline: none;
 }
 
 h2 {
