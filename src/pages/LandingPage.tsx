@@ -13,7 +13,7 @@ export const LandingPage = () => {
               className="text-xl large"
               style={{ width: "400px", fontWeight: "bold" }}
             >
-              Imagine if <span className="snap">Snapchat</span> had events.
+              Imagine if <span className="snap">Snapchat</span><br /> had events.
             </h1>
             <p className="my-5" style={{ width: "400px" }}>
               Easily host and share events with your friends across any social
