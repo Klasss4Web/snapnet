@@ -23,9 +23,7 @@ export const LandingPage = () => {
             <div className="hidden md:block text-end mt-4">
               <button>Create my event</button>
             </div>
-            {/* <button className="hidden md:block text-end">
-              Create my event
-            </button> */}
+            
           </div>
         </div>
       </div>
