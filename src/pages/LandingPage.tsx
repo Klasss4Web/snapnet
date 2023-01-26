@@ -2,7 +2,7 @@ import bannerImg from "../assets/banner.png";
 
 export const LandingPage = () => {
   return (
-    <div className="container mx-auto  p-4">
+    <div className="container mx-auto  p-4 bg-slate-50">
       <div className="container flex justify-between  flex-col-reverse md:flex-row">
         <div className="flex-1 h-90">
           <img width="100%" height={"100%"} src={bannerImg} alt="banner" />
