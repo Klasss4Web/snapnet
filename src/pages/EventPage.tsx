@@ -11,7 +11,7 @@ const EventPage = () => {
   const params = useParams();
   const { id } = params;
 
-  console.log("IDDD", data);
+  // console.log("IDDD", data);
   const viewEvent = data?.find((event) => event.id === Number(id));
 
   const otherEvent = data?.filter((event) => event.id !== Number(id));
@@ -27,6 +27,7 @@ const EventPage = () => {
 
       <h2 className="pt-4">Other Events</h2>
       <EventList otherEvent={otherEvent} />
+      {/* <EventList otherEvent={otherEvent} /> */}
     </div>
   );
 };
