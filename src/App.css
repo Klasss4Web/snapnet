@@ -1,9 +1,14 @@
+body {
+    background: #dddddd;
+}
+
 .App {
   max-width: 50%;
   margin: 0 auto;
   text-align: left;
   line-height: 1.5;
   margin-bottom: 40px;
+
 }
 
 .App-logo {
